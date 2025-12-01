@@ -1,0 +1,81 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+body{
+    margin: 0px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.container{
+    height: 100vh;
+    background-color: var(--Yellow);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 340px;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 7px 7px 1px var(--Gray-950);
+}
+.imgg{
+    width: 100%;
+    border-radius: 7px;
+    margin: 0px;
+}
+button{
+    padding: 7px;
+    background-color: var(--Yellow);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    align-self: flex-start;
+}
+.first-prg{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+}
+h2{
+    font-weight: 800;
+    margin: 0px; 
+}
+.secand-prg{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Gray-500);
+    margin: 0px; 
+}
+.person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+   
+}
+.name{
+    font-size: 16px;
+    font-weight: 800;
+}
+@media (max-width:375px){
+    main{
+        width: 250px;
+        box-shadow: 5px 5px 1px var(--Gray-950);
+    }
+    h2{
+        font-size: 20px;
+    }
+}
